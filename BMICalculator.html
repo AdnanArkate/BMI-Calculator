@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>BMI</title>
+</head>
+<body>
+<h1>BMI calculation</h1>
+
+<label>Weight</label>
+<input type="number" id='w' >
+
+<label>Height</label>
+<input type="number" id=h >
+<br>
+
+<button onclick="document.getElementById('output').innerHTML='your BMI value is:'+(w.value/(h.value*h.value)).toFixed(1)">Calculate BMI</button>
+<p id="output"></p>
+
+<table border='1'>
+<tr>
+<th>BMI Range</th>
+<th>category</th>
+</tr>
+
+<tr>
+<td bgcolor="yellow">< 16</td>
+<td>Severe Thinness</td>
+</tr>
+
+<tr>
+<td style="background-color:yellow">16 - 17</td>
+<td>Moderate Thinness</td>
+</tr>
+
+<tr>
+<td  style="background-color:yellow">17 - 18.5</td>
+<td>Mild Thinness</td>
+</tr>
+
+<tr>
+<td style="background-color:lightgreen">18.5 - 24.9</td>
+<td>Normal Thinness</td>
+</tr>
+
+<tr>
+<td style="background-color:lightgreen">25 - 29.9</td>
+<td>Overweight</td>
+</tr>
+
+<tr>
+<td style="background-color:red">30 - 34.9</td>
+<td>Obese class I</td>
+</tr>
+
+<tr>
+<td style="background-color:red">35 - 39.9</td>
+<td>Obese class II</td>
+</tr>
+
+<tr>
+<td style="background-color:red">>= 40</td>
+<td>Obese class III</td>
+</tr>
+
+
+
+
+
+</body>
+</html>
